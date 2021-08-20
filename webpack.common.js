@@ -20,11 +20,23 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.html$/,
+        use: ["html-loader"],
+      },
+      {
+        test: /\.(svg|png|jpg|jpeg|gif)$/,
+        use: {
+          loader: "file-loader",
+          options: "[name].[hash].[ext]",
+          outputPath: "images",
+        },
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
+      template: "./src/template.html",
       filename: "index.html",
     }),
   ],
