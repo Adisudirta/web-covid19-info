@@ -18,19 +18,22 @@ module.exports = {
           {
             loader: "css-loader",
           },
+          {
+            loader: "postcss-loader",
+          },
         ],
       },
       {
-        test: /\.html$/,
-        use: ["html-loader"],
-      },
-      {
-        test: /\.(svg|png|jpg|jpeg|gif)$/,
-        use: {
-          loader: "file-loader",
-          options: "[name].[hash].[ext]",
-          outputPath: "images",
-        },
+        test: /\.(png|jp(e*)g|svg)$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 8000,
+              name: "images/[hash]-[name].[ext]",
+            },
+          },
+        ],
       },
     ],
   },
