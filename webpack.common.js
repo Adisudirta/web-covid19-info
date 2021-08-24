@@ -24,6 +24,10 @@ module.exports = {
         ],
       },
       {
+        test: /\.html$/i,
+        use: ["html-loader"],
+      },
+      {
         test: /\.(png|jp(e*)g|svg)$/,
         use: [
           {

@@ -1,0 +1,38 @@
+<header class="fixed w-full shadow-md">
+  <div class="container flex justify-between items-center py-2 px-7 mx-auto flex-col md:flex-row">
+    <div id="brand-container" class="flex items-center justify-between w-full py-2 md:w-auto md:border-b-0 md:py-0">
+      <!-- Brand Logo -->
+      <div class="flex items-center" style="cursor: pointer">
+        <img id="logo" alt="logo" class="w-7 md:w-8" />
+        <h1 class="text-red-500 font-bold ml-2 text-lg md:text-xl lg:text-2xl">COVID-19 INFO</h1>
+      </div>
+      <!-- --- -->
+
+      <!-- Toggle Button -->
+      <div>
+        <button id="toggle-btn" class="transition duration-300 ease-in text-gray-500 md:hidden transform">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <!-- --- -->
+    </div>
+
+    <!-- Navigation -->
+    <div id="nav" class="w-full my-3 hidden md:block md:w-auto">
+      <ul class="flex flex-col md:flex-row">
+        <li class="transition duration-200 ease-in ml-4 py-2 text-gray-500 hover:text-gray-800 md:py-0">
+          <a id="stat-href" class="text-sm md:text-base"> Statistik </a>
+        </li>
+        <li class="transition duration-200 ease-in ml-4 py-2 text-gray-500 hover:text-gray-800 md:py-0">
+          <a id="bedroom-href" class="text-sm md:text-base"> Ketersediaan Kamar </a>
+        </li>
+        <li class="transition duration-200 ease-in ml-4 py-2 text-gray-500 hover:text-gray-800 md:py-0">
+          <a id="about" class="text-sm md:text-base" href="#"> Tentang </a>
+        </li>
+      </ul>
+    </div>
+    <!-- --- -->
+  </div>
+</header>
