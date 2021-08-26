@@ -7,3 +7,4 @@ document.getElementById("logo-icon").href = logo;
 
 // import component
 import "./script/components/navbar/navbar.js";
+import "./script/components/banner/banner.js";
