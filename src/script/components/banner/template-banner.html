@@ -1,78 +1,84 @@
-<div class="container pt-16 mx-auto w-full h-screen box-border">
+<div class="pt-16 px-3 sm:px-16 mx-auto w-full h-auto lg:h-screen box-border">
   <div class="py-5 box-border">
     <h3 class="text-gray-400 text-center">Update terakhir data statistik: ...</h3>
   </div>
-  <div class="flex h-5/6 justify-center align-center">
+  <div class="flex flex-col lg:flex-row h-5/6 justify-center align-center">
     <!-- Hero Image -->
-    <img id="banner-hero" alt="hero-img" />
+    <div class="w-full lg:w-3/5">
+      <img id="banner-hero" alt="hero-img" class="w-full h-full md:mx-auto md:w-96 md:h-auto lg:w-full lg:h-full" />
+    </div>
     <!-- --- -->
 
     <!-- Stat Covid Container -->
-    <div class="flex-1 p-10 space-y-7">
-      <!-- Tittle -->
-      <h2 class="text-2xl">Statisik global Covid-19:</h2>
-      <!-- --- -->
+    <div class="w-full lg:w-2/5">
+      <div class="p-10 mx-auto space-y-7">
+        <!-- Tittle -->
+        <h2 class="text-2xl">Statisik global Covid-19:</h2>
+        <!-- --- -->
 
-      <!-- Positive -->
-      <div class="flex w-3/4 p-3 space-x-3 items-center border-l-8 border-yellow-300 bg-gray-100 rounded-sm shadow-md">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-14 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
-            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
-            <path
-              fill-rule="evenodd"
-              d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </div>
-        <div class="flex-1">
-          <div class="animate-pulse w-full space-y-2">
-            <div class="h-4 bg-gray-400 rounded w-3/4"></div>
-            <div class="h-6 bg-gray-400 rounded w-5/6"></div>
+        <div class="space-y-7 md:space-y-0 lg:space-y-7 md:space-x-5 lg:space-x-0 w-full flex flex-col md:flex-row lg:flex-col">
+          <!-- Positive -->
+          <div class="flex w-full md:w-3/4 p-3 space-x-3 items-center border-l-8 border-yellow-300 bg-gray-100 rounded-sm shadow-md">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-14 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="flex-1">
+              <div class="animate-pulse w-full space-y-2">
+                <div class="h-4 bg-gray-400 rounded w-3/4"></div>
+                <div class="h-6 bg-gray-400 rounded w-5/6"></div>
+              </div>
+            </div>
           </div>
+          <!-- --- -->
+
+          <!-- Healed -->
+          <div class="flex w-full md:w-3/4 p-3 space-x-3 items-center border-l-8 border-green-300 bg-gray-100 rounded-sm shadow-md">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-14 text-green-600" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="flex-1">
+              <div class="animate-pulse w-full space-y-2">
+                <div class="h-4 bg-gray-400 rounded w-3/4"></div>
+                <div class="h-6 bg-gray-400 rounded w-5/6"></div>
+              </div>
+            </div>
+          </div>
+          <!-- --- -->
+
+          <!-- Death -->
+          <div class="flex w-full md:w-3/4 p-3 space-x-3 items-center border-l-8 border-red-400 bg-gray-100 rounded-sm shadow-md">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-14 text-red-600" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-7.536 5.879a1 1 0 001.415 0 3 3 0 014.242 0 1 1 0 001.415-1.415 5 5 0 00-7.072 0 1 1 0 000 1.415z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="flex-1">
+              <div class="animate-pulse w-full space-y-2">
+                <div class="h-4 bg-gray-400 rounded w-3/4"></div>
+                <div class="h-6 bg-gray-400 rounded w-5/6"></div>
+              </div>
+            </div>
+          </div>
+          <!-- --- -->
         </div>
       </div>
-      <!-- --- -->
-
-      <!-- Healed -->
-      <div class="flex w-3/4 p-3 space-x-3 items-center border-l-8 border-green-300 bg-gray-100 rounded-sm shadow-md">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-14 text-green-600" viewBox="0 0 20 20" fill="currentColor">
-            <path
-              fill-rule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </div>
-        <div class="flex-1">
-          <div class="animate-pulse w-full space-y-2">
-            <div class="h-4 bg-gray-400 rounded w-3/4"></div>
-            <div class="h-6 bg-gray-400 rounded w-5/6"></div>
-          </div>
-        </div>
-      </div>
-      <!-- --- -->
-
-      <!-- Death -->
-      <div class="flex w-3/4 p-3 space-x-3 items-center border-l-8 border-red-400 bg-gray-100 rounded-sm shadow-md">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-14 text-red-600" viewBox="0 0 20 20" fill="currentColor">
-            <path
-              fill-rule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-7.536 5.879a1 1 0 001.415 0 3 3 0 014.242 0 1 1 0 001.415-1.415 5 5 0 00-7.072 0 1 1 0 000 1.415z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </div>
-        <div class="flex-1">
-          <div class="animate-pulse w-full space-y-2">
-            <div class="h-4 bg-gray-400 rounded w-3/4"></div>
-            <div class="h-6 bg-gray-400 rounded w-5/6"></div>
-          </div>
-        </div>
-      </div>
-      <!-- --- -->
     </div>
     <!-- --- -->
   </div>
